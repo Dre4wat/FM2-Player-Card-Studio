@@ -1,0 +1,30 @@
+export const DEFAULT_PLAYER = {
+  rosterId:555222712, firstName:"Trey", lastName:"McBride", fullName:"Trey McBride", position:"TE", jerseyNum:85,
+  age:26, height:76, weight:246, yearsPro:4, portraitId:1830, devTrait:3, playerBestOvr:99,
+  team:{abbrName:"AZ",cityName:"Arizona",displayName:"Cardinals",logoId:6,primaryColor:"8847399",secondaryColor:"16777215"},
+  capHit:8690000, contractSalary:53630000, contractBonus:28120000, contractYearsLeft:4, contractLength:5,
+  capReleaseNetSavings:0, capReleasePenalty:37540000, speedRating:88, accelRating:90, agilityRating:84,
+  awareRating:99, strengthRating:76, jumpRating:94, staminaRating:97, toughRating:87, carryRating:75,
+  changeOfDirectionRating:79, bCVRating:88, jukeMoveRating:78, spinMoveRating:75, breakTackleRating:80,
+  truckRating:71, stiffArmRating:77, catchRating:99, cITRating:93, specCatchRating:92, releaseRating:85,
+  routeRunShortRating:88, routeRunMedRating:83, routeRunDeepRating:78, impactBlockRating:67, leadBlockRating:52,
+  runBlockRating:64, runBlockPowerRating:60, runBlockFinesseRating:63, passBlockRating:62,
+  passBlockPowerRating:61, passBlockFinesseRating:62, throwPowerRating:33, throwAccShortRating:15,
+  throwAccMidRating:10, throwAccDeepRating:6, throwOnRunRating:10, throwUnderPressureRating:10,
+  playActionRating:6, breakSackRating:17, tackleRating:38, hitPowerRating:32, pursuitRating:41,
+  playRecRating:32, blockShedRating:45, finesseMovesRating:29, powerMovesRating:25, manCoverRating:15,
+  zoneCoverRating:20, pressRating:10, kickPowerRating:22, kickAccRating:20,
+};
+const attr = (label, key) => ({ label, key });
+export const attributeSets = {
+  QB:[attr("Throw Power","throwPowerRating"),attr("Short Accuracy","throwAccShortRating"),attr("Mid Accuracy","throwAccMidRating"),attr("Deep Accuracy","throwAccDeepRating"),attr("Awareness","awareRating"),attr("Throw On The Run","throwOnRunRating"),attr("Under Pressure","throwUnderPressureRating"),attr("Play Action","playActionRating"),attr("Speed","speedRating"),attr("Break Sack","breakSackRating")],
+  HB:[attr("Speed","speedRating"),attr("Acceleration","accelRating"),attr("Carry","carryRating"),attr("Change of Direction","changeOfDirectionRating"),attr("Ball Carry Vision","bCVRating"),attr("Juke Move","jukeMoveRating"),attr("Spin Move","spinMoveRating"),attr("Break Tackle","breakTackleRating"),attr("Trucking","truckRating"),attr("Catching","catchRating")],
+  FB:[attr("Speed","speedRating"),attr("Strength","strengthRating"),attr("Carry","carryRating"),attr("Lead Block","leadBlockRating"),attr("Impact Block","impactBlockRating"),attr("Run Block","runBlockRating"),attr("Break Tackle","breakTackleRating"),attr("Trucking","truckRating"),attr("Stiff Arm","stiffArmRating"),attr("Catching","catchRating")],
+  WR:[attr("Speed","speedRating"),attr("Acceleration","accelRating"),attr("Catching","catchRating"),attr("Catch In Traffic","cITRating"),attr("Spectacular Catch","specCatchRating"),attr("Release","releaseRating"),attr("Short Route","routeRunShortRating"),attr("Med Route","routeRunMedRating"),attr("Deep Route","routeRunDeepRating"),attr("Change of Direction","changeOfDirectionRating")],
+  TE:[attr("Speed","speedRating"),attr("Acceleration","accelRating"),attr("Catching","catchRating"),attr("Catch In Traffic","cITRating"),attr("Short Route","routeRunShortRating"),attr("Med Route","routeRunMedRating"),attr("Deep Route","routeRunDeepRating"),attr("Impact Block","impactBlockRating"),attr("Run Block","runBlockRating"),attr("Pass Block","passBlockRating")],
+  OL:[attr("Strength","strengthRating"),attr("Awareness","awareRating"),attr("Run Block","runBlockRating"),attr("Run Block Power","runBlockPowerRating"),attr("Run Block Finesse","runBlockFinesseRating"),attr("Pass Block","passBlockRating"),attr("Pass Block Power","passBlockPowerRating"),attr("Pass Block Finesse","passBlockFinesseRating"),attr("Impact Block","impactBlockRating"),attr("Lead Block","leadBlockRating")],
+  DL:[attr("Strength","strengthRating"),attr("Acceleration","accelRating"),attr("Speed","speedRating"),attr("Tackle","tackleRating"),attr("Pursuit","pursuitRating"),attr("Play Recognition","playRecRating"),attr("Block Shedding","blockShedRating"),attr("Power Moves","powerMovesRating"),attr("Finesse Moves","finesseMovesRating"),attr("Hit Power","hitPowerRating")],
+  LB:[attr("Speed","speedRating"),attr("Acceleration","accelRating"),attr("Strength","strengthRating"),attr("Tackle","tackleRating"),attr("Pursuit","pursuitRating"),attr("Play Recognition","playRecRating"),attr("Block Shedding","blockShedRating"),attr("Hit Power","hitPowerRating"),attr("Zone Coverage","zoneCoverRating"),attr("Man Coverage","manCoverRating")],
+  DB:[attr("Speed","speedRating"),attr("Acceleration","accelRating"),attr("Agility","agilityRating"),attr("Man Coverage","manCoverRating"),attr("Zone Coverage","zoneCoverRating"),attr("Press","pressRating"),attr("Play Recognition","playRecRating"),attr("Catching","catchRating"),attr("Jumping","jumpRating"),attr("Change of Direction","changeOfDirectionRating")],
+  K:[attr("Kick Power","kickPowerRating"),attr("Kick Accuracy","kickAccRating"),attr("Awareness","awareRating"),attr("Speed","speedRating"),attr("Acceleration","accelRating"),attr("Agility","agilityRating"),attr("Strength","strengthRating"),attr("Toughness","toughRating"),attr("Stamina","staminaRating"),attr("Carry","carryRating")],
+};

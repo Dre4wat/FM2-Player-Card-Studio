@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a0d">
+  <meta name="description" content="Create downloadable Madden-style player cards from the FM2 NeonSportz league.">
+  <title>FM2 Player Card Studio</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+<main class="studio-shell">
+  <header class="studio-bar">
+    <div class="studio-brand"><div class="studio-mark">FM2</div><div><strong>Player Card Studio</strong><span>NeonSportz league generator</span></div></div>
+    <div class="studio-actions">
+      <div class="search-wrap"><input id="player-search" class="player-search" type="search" placeholder="Search any FM2 player…" aria-label="Search FM2 players" autocomplete="off"><div id="search-results" class="search-results" hidden></div></div>
+      <select id="team-select" class="team-select" aria-label="Select team"><option value="">Team</option></select>
+      <select id="roster-select" class="roster-select" aria-label="Select player from team"><option value="">Select player</option></select>
+      <button id="refresh" type="button" class="outline-button">Refresh</button>
+      <button id="save" type="button" class="primary-button">Save PNG</button>
+    </div>
+  </header>
+  <section id="export-result" class="export-result" aria-label="Generated PNG" hidden></section>
+  <section class="workspace" aria-label="Player card preview">
+    <div class="status-row"><span class="live-pill">Live FM2 player data</span><span>1080 × 1350 PNG</span></div>
+    <div class="card-frame"><div id="card" class="player-card"></div></div>
+    <div id="error" class="error-banner" role="alert" hidden></div>
+    <p class="help-note">Player data and portraits are loaded from the FM2 NeonSportz league. Madden NFL names and imagery belong to EA SPORTS.</p>
+  </section>
+</main>
+</body>
+</html>
